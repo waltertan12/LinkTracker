@@ -1,8 +1,10 @@
 {
-  "name": "such wow",
+  "name": "Pouch",
   "version": "1.0.0",
   "description": "Help keep track of useful links",
   "scripts": {
+    "build": "sudo ./node_modules/.bin/webpack --config webpack.production.config.js && mv ./public/index.html ./public/index.html.erb",
+    "start": "webpack-dev-server --progress --profile --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Walter Tan <waltertan12@gmail.com>",
@@ -32,7 +34,7 @@
     "file-loader": "0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "node-sass": "^3.10.1",
-    "react-hot-loader": "1.3.0",
+    "react-hot-loader": "^1.3.1",
     "sass-loader": "^4.0.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
