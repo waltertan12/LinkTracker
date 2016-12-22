@@ -1,3 +1,3 @@
-# LinkTracker
+# Pouch
 
-An app that helps you keep track of useful links
+It's basically Pocket but much, much worse.
