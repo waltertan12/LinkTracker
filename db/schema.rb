@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(version: 20161219004933) do
 
   create_table "invites", force: :cascade do |t|
     t.string   "invite_digest",                   null: false
-    t.boolean  "valid",           default: false
+    t.boolean  "is_valid",        default: false
     t.datetime "expiration_date",                 null: false
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.index ["expiration_date"], name: "index_invites_on_expiration_date", using: :btree
     t.index ["invite_digest"], name: "index_invites_on_invite_digest", using: :btree
-    t.index ["valid"], name: "index_invites_on_valid", using: :btree
+    t.index ["is_valid"], name: "index_invites_on_is_valid", using: :btree
   end
 
   create_table "links", force: :cascade do |t|
